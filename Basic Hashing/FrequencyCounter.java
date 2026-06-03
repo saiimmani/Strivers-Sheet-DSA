@@ -7,24 +7,25 @@ class FrequencyCounter {
 
         // Count frequencies
         for (int i = 0; i < n; i++) {
-            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);  // ( arr[i] - > Element ;  
+            // map.getOrDefault(arr[i], 0) + 1 -->  tells the count or assign default as 0 ).
         }
 
-        int maxFreq = 0, minFreq = n;
+        int maxFreq = 0, minFreq = n; //--> Absolute maximun of the array can be 
         int maxEle = 0, minEle = 0;
 
         // Traverse map to find min and max frequency elements
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            int element = entry.getKey();
-            int count = entry.getValue();
+            int element = entry.getKey(); // mapping thr key values
+            int count = entry.getValue(); // mapping values 
 
             if (count > maxFreq) {
-                maxFreq = count;
+                maxFreq = count;        //  gives max element 
                 maxEle = element;
             }
 
             if (count < minFreq) {
-                minFreq = count;
+                minFreq = count;  // min element
                 minEle = element;
             }
         }
