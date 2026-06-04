@@ -6,15 +6,15 @@ class BubbleSort {
 
         int n = arr.length;
 
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {        // --> from last element  decrement the size of array after every iteration.
 
-            boolean swap = false;
+            boolean swap = false;                                         
 
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j < i; j++) {            
 
                 if (arr[j] > arr[j + 1]) {
 
-                    int temp = arr[j + 1];
+                    int temp = arr[j + 1];   // Swaping 
                     arr[j + 1] = arr[j];
                     arr[j] = temp;
 
@@ -48,7 +48,7 @@ class BubbleSort {
 
         System.out.println();
 
-        BubbleSort sorter = new BubbleSort();
-        sorter.bubbleSort(arr);
+        BubbleSort sorter = new BubbleSort();  // Bubble Sort --> Class ( Creating new obj)
+        sorter.bubbleSort(arr); // function call  "sorter"."bubbleSort"(arr); -> obj.method();
     }
 }
