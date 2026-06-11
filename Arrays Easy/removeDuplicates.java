@@ -3,7 +3,7 @@ class Solution {
        if(nums.length == 0) return 0;
        int i = 0;
        for(int j = 1; j<nums.length; j++){
-        if(nums[j] != nums[i]){ // if i , j pointing to same element it will skip that 
+        if(nums[j] != nums[i]){ // if i , j pointing to same element it will skip that like if it is duplicate it skips 
             i++; // increments by one  
             nums[i] = nums[j]; // // save new arr 
         }
