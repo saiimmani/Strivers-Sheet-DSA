@@ -26,3 +26,15 @@ class Solution {
         return (int) maxi;
     }
 }
+
+/*
+
+
+-> Another Optimal Sol 
+int cur = 0; // Integer.MAX_VALUE();
+int max = 0
+for( looping through array)
+cur =  Math.max(num[i] , cur + num[i});
+max = Math.max(cur, max);
+
+*/
